@@ -54,6 +54,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     line-height: 150%;
+    color: var(--dark-gray);
 }
 
 * {
@@ -61,6 +62,7 @@ body {
     padding: 0;
     list-style-type: none;
     box-sizing: border-box;
+    outline: 1px solid red;
 }
 
 .container {
@@ -120,7 +122,136 @@ body {
     width: 49px;
     height: 49px;
 }
-    
+
+.slider-section {
+    position: relative;
+}
+
+.slider {
+    display: flex;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    top: 72%;
+    left: 67.5%;
+}
+
+.slider-pagination {
+    position: absolute;
+    z-index: 2;
+
+}
+
+
+.swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+    background: #292D32;
+}
+
+.slide-2 {
+    background-color: #F9F9F9;
+}
+
+.swiper-slide {
+    width: 74%;
+    height: auto;
+}
+
+.swiper-btn {
+    cursor: pointer;
+    width: 106px;
+    height: 23px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 72%;
+    left: 75.5%;
+    z-index: 2;
+}
+
+.slide {
+    background-color: #F2F2F2;
+    width: 74%;
+    display: flex;
+    padding-left: 260px;
+    padding-top: 74px;
+    padding-bottom: 54px;
+    background-image: url(images/dell.svg);
+    background-repeat: no-repeat;
+    background-position: 260px 97px;
+}
+
+.slide__inner-wrap {
+    display: flex;
+}
+
+.slide__scroll__btn {
+    width: 25px;
+    height: 39px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    margin-bottom: -15px;
+    margin-top: 16.5px;
+    order: 2;
+}
+
+.scroll__wrap {
+    margin-top: 278px;
+}
+
+.slide__scroll {
+    writing-mode: vertical-rl;
+    transform: scale(-1);
+}
+
+.slide__text {
+    padding-left: 108px;
+    padding-top: 180px;
+
+}
+
+.slide__text__subheading {
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--light-gray);
+}
+
+.slide__text__heading {
+    font-size: 50px;
+    padding: 15px 0 74px;
+    line-height: normal;
+    max-width: 400px;
+}
+
+.slider__btn {
+    border: none;
+    font: inherit;
+    background-color: transparent;
+}
+
+.slider__btn__arrow {
+    background-color: var(--blue);
+    color: #FFFFFF;
+    font-family: "Circe", sans-serif;
+    font-weight: 700;
+    padding: 17px 22px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.catalog-section {
+    padding: 154px 180px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.catalog-section__card {
+    width: 440px;
+}
+
 @media screen and (min-width:1920px) {
     .container {
         max-width: 73%;

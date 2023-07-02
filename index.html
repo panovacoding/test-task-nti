@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <!-- <header>
         <nav class="navbar container">
             <div class="navbar__left">
                 <img src="images/dell-logo.png" alt="dell logo" class="navbar__logo">
@@ -41,6 +46,62 @@
                 </ul>
             </div>
         </nav>
-    </header>
+        <div class="slider-section swiper">
+            <div class="slider swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <div class="slide__inner-wrap">
+                        <div class="scroll__wrap">
+                            <p class="slide__scroll" dir="rtl">Scroll to Catalog</p>
+                            <button class="slide__scroll__btn">
+                                <svg width="25" height="39"><use xlink:href="images/sprite.svg#scroll-icon"></use></svg>
+                            </button>
+                        </div>
+                        <div class="slide__text">
+                            <p class="slide__text__subheading">Новое поступление</p>
+                            <p class="slide__text__heading">Лучшие товары от компании Dell</p>
+                            <button class="slider__btn"><span class="slider__btn__arrow">→</span>Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="slide__image">
+                        <img src="images/header-pic.png" alt="notebook">
+                    </div>
+                </div>
+                <div class="slide-2 swiper-slide">
+                    <img src="images/offer.png" alt="">
+                </div>
+                <div class="slide-2 swiper-slide">
+                    <img src="images/offer.png" alt="">
+                </div>
+            </div>
+            <div class="slider-pagination">
+                <span class="slider-pagination__bullet"></span>
+                <span class="slider-pagination__bullet"></span>
+                <span class="slider-pagination__bullet"></span>
+            </div>
+            <button class="swiper-btn">
+                <svg><use xlink:href="images/sprite.svg#swiper-btn"></use></svg>
+            </button>
+        </div>
+    </header> -->
+    <section id="catalog" class="catalog-section container">
+        <div class="catalog-section__card catalog-section__card--heading">
+            <p>Каталог товаров от Dell</p>
+            <p>Наша компания является зарегистрированным и официальным партнером Dell в России.</p>
+            <button class="slider__btn"><span class="slider__btn__arrow">→</span>В каталог</button>
+        </div>
+        <div class="catalog-section__card">
+            <picture>
+                <source media="(max-width:376px)" srcset="images/notebook-mob.png">
+                <!-- <source media="(min-width:768px)" srcset="images/notebook.png"> -->
+                <img width="415" height="245" src="images/notebook.png" alt="">
+            </picture>
+        </div>
+        <div class="catalog-section__card"></div>
+        <div class="catalog-section__card"></div>
+        <div class="catalog-section__card"></div>
+        <div class="catalog-section__card"></div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
