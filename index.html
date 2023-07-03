@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <header>
+    <header>
         <nav class="navbar container">
             <div class="navbar__left">
                 <img src="images/dell-logo.png" alt="dell logo" class="navbar__logo">
@@ -58,8 +58,8 @@
                         </div>
                         <div class="slide__text">
                             <p class="slide__text__subheading">Новое поступление</p>
-                            <p class="slide__text__heading">Лучшие товары от компании Dell</p>
-                            <button class="slider__btn"><span class="slider__btn__arrow">→</span>Подробнее</button>
+                            <p class="slide__text__heading h2-heading">Лучшие товары от компании Dell</p>
+                            <button class="blue__btn"><span class="blue__btn__arrow">→</span>Подробнее</button>
                         </div>
                     </div>
                     <div class="slide__image">
@@ -82,24 +82,153 @@
                 <svg><use xlink:href="images/sprite.svg#swiper-btn"></use></svg>
             </button>
         </div>
-    </header> -->
+    </header>
     <section id="catalog" class="catalog-section container">
         <div class="catalog-section__card catalog-section__card--heading">
-            <p>Каталог товаров от Dell</p>
-            <p>Наша компания является зарегистрированным и официальным партнером Dell в России.</p>
-            <button class="slider__btn"><span class="slider__btn__arrow">→</span>В каталог</button>
+            <p class="h2-heading catalog-section__card__heading">Каталог товаров от Dell</p>
+            <p class="catalog-section__card__description">Наша компания является зарегистрированным и официальным партнером Dell в России.</p>
+            <button class="blue__btn"><span class="blue__btn__arrow">→</span>В каталог</button>
         </div>
-        <div class="catalog-section__card">
+        <div class="catalog-section__card catalog-section__card--odd catalog-section__card--notebook">
+            <span class="serial-number">01</span>
             <picture>
-                <source media="(max-width:376px)" srcset="images/notebook-mob.png">
-                <!-- <source media="(min-width:768px)" srcset="images/notebook.png"> -->
-                <img width="415" height="245" src="images/notebook.png" alt="">
-            </picture>
+                <source media="(max-width:500px)"
+                        srcset="images/notebook-mob.png, images/notebook-mob-2x.png 2x "
+                        alt="notebook">
+                <source media="(min-width:501)"
+                        srcset="images/notebook.png, images/notebook-2x.png 2x"
+                        alt="notebook">
+                <img src="/images/notebook.png" alt="notebook" class="catalog-section__card--notebook__image">
+              </picture>
+              <div class="catalog-section__card__info-wrap catalog-section__card__info-wrap--notebook">
+                  <div class="amount-number">105 товаров</div>
+                  <div class="name">Ноутбуки</div>
+              </div>
         </div>
-        <div class="catalog-section__card"></div>
-        <div class="catalog-section__card"></div>
-        <div class="catalog-section__card"></div>
-        <div class="catalog-section__card"></div>
+        <div class="catalog-section__card catalog-section__card--even catalog-section__card--pc">
+            <span class="serial-number">02</span>
+            <picture>
+                <source media="(max-width:500px)"
+                        srcset="images/pc-mob.png, images/pc-mob-2x.png 2x "
+                        alt="pc">
+                <source media="(min-width:501)"
+                        srcset="images/pc.png, images/pc-2x.png 2x"
+                        alt="pc">
+                <img src="/images/pc.png" alt="pc" class="catalog-section__card--pc__image">
+              </picture>
+              <div class="catalog-section__card__info-wrap catalog-section__card__info-wrap--pc">
+                <div class="amount-number">65 товаров</div>
+                <div class="name">Персональные компьютеры</div>
+            </div>
+        </div>
+        <div class="catalog-section__card catalog-section__card--odd catalog-section__card--server">
+            <span class="serial-number">03</span>
+            <picture>
+                <source media="(max-width:500px)"
+                        srcset="images/server-mob.png, images/server-mob-2x.png 2x "
+                        alt="server">
+                <source media="(min-width:501)"
+                        srcset="images/server.png, images/server-2x.png 2x"
+                        alt="server">
+                <img src="/images/server.png" alt="server" class="catalog-section__card--server__image">
+              </picture>
+              <div class="catalog-section__card__info-wrap catalog-section__card__info-wrap--server">
+                <div class="amount-number">13 товаров</div>
+                <div class="name">Серверы</div>
+            </div>
+        </div>
+        <div class="catalog-section__card catalog-section__card--even catalog-section__card--emc">
+            <span class="serial-number">04</span>
+            <picture>
+                <source media="(max-width:500px)"
+                        srcset="images/emc-mob.png, images/emc-mob-2x.png 2x "
+                        alt="emc">
+                <source media="(min-width:501)"
+                        srcset="images/emc.png, images/emc-2x.png 2x"
+                        alt="emc">
+                <img src="/images/emc.png" alt="emc" class="catalog-section__card--emc__image">
+              </picture>
+              <div class="catalog-section__card__info-wrap catalog-section__card__info-wrap--emc">
+                <div class="amount-number">2345 товаров</div>
+                <div class="name">Dell EMC</div>
+            </div>
+        </div>
+        <div class="catalog-section__card catalog-section__card--odd catalog-section__card--emc-parts">
+            <span class="serial-number">05</span>
+            <picture>
+                <source media="(max-width:500px)"
+                        srcset="images/parts-mob.png, images/parts-mob-2x.png 2x "
+                        alt="emc parts">
+                <source media="(min-width:501)"
+                        srcset="images/parts.png, images/parts-2x.png 2x"
+                        alt="emc parts">
+                <img src="/images/parts.png" alt="emc parts" class="catalog-section__card--emc-parts__image">
+              </picture>
+              <div class="catalog-section__card__info-wrap catalog-section__card__info-wrap--emc-parts">
+                <div class="amount-number">195 товаров</div>
+                <div class="name">Запасные части к Dell EMC</div>
+            </div>
+        </div>
+    </section>
+    <section class="perks-section">
+        <div class="perks-section__heading-wrap container">
+            <picture>
+                <source media="(max-width:500px)"
+                        srcset="images/perks-image-mob.png, images/perks-image-mob-2x.png 2x "
+                        alt="notebook">
+                <source media="(min-width:501)"
+                        srcset="images/perks-image.png, images/perks-image-2x.png 2x"
+                        alt="notebook">
+                <img src="/images/perks-image.png" alt="notebook">
+            </picture>
+            <div class="perks-section__heading">
+                <p class="h2-heading">Наши преимущества</p>
+                <p class="perks-section__description">Оптимизация мощностей (расходов, социальных выплат и т.п.) позволили компании на 4,7% понизить цены по сравнению с конкурентами</p>
+                <button class="blue__btn"><span class="blue__btn__arrow">→</span>Оставить заявку</button>
+            </div>
+        </div>
+        <div class="perks-section__perks-list-wrap">
+            <ul class="perks-section__perks-list container">
+                <li class="perks-section__perks-list__list-element">
+                    <div class="icon-wrap">
+                        <svg width="36" height="36"><use xlink:href="images/sprite.svg#perks-price"></use></svg>
+                    </div>
+                    <div class="perks-section__perks-list__list-element__name">Самые выгодные и низкие цены</div>
+                    <div class="perks-section__perks-list__list-element__description">В наличии широкий ассортимент, а также доступные цены 
+                        на ноутбуки Dell </div>
+                </li>
+                <li class="perks-section__perks-list__list-element">
+                    <div class="icon-wrap">
+                        <svg width="36" height="36"><use xlink:href="images/sprite.svg#perks-asc"></use></svg>
+                    </div>
+                    <div class="perks-section__perks-list__list-element__name">Авторизованный сервисный центр DELL</div>
+                    <div class="perks-section__perks-list__list-element__description">Сертифицированный сервисный центр по ремонту техники Dell в России и странах СНГ</div>
+                </li>
+                <li class="perks-section__perks-list__list-element">
+                    <div class="icon-wrap">
+                        <svg width="36" height="36"><use xlink:href="images/sprite.svg#perks-expert"></use></svg>
+                    </div>
+                    <div class="perks-section__perks-list__list-element__name">Высокий уровень технической экспертизы</div>
+                    <div class="perks-section__perks-list__list-element__description">Мы прошли аттестацию в виде тестирования, где показали высокий уровень знаний</div>
+                </li>
+                <li class="perks-section__perks-list__list-element">
+                    <div class="icon-wrap">
+                        <svg width="36" height="36"><use xlink:href="images/sprite.svg#perks-official-partner"></use></svg>
+                    </div>
+                    <div class="perks-section__perks-list__list-element__name">Официальный партнер DELL</div>
+                    <div class="perks-section__perks-list__list-element__description">Официальный поставщик продукции DELL в России 
+                        и странах СНГ</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="news-section container">
+        <div class="news-section__heading-wrap">
+            <p class="h2-heading">Последние новости</p>
+            <button class="blue__btn">Все новости<span class="blue__btn__arrow blue__btn__arrow--reverse">→</span></button>
+        </div>
+        <div class="news-section__description"> Вы можете посмотреть ещё больше интересных новостей и узнать о последних новинках, перейдя по кнопке
+        </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script.js"></script>

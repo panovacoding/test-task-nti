@@ -62,7 +62,7 @@ body {
     padding: 0;
     list-style-type: none;
     box-sizing: border-box;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .container {
@@ -218,20 +218,23 @@ body {
     color: var(--light-gray);
 }
 
-.slide__text__heading {
+.h2-heading {
     font-size: 50px;
-    padding: 15px 0 74px;
     line-height: normal;
+}
+
+.slide__text__heading {
+    padding: 15px 0 74px;
     max-width: 400px;
 }
 
-.slider__btn {
+.blue__btn {
     border: none;
     font: inherit;
     background-color: transparent;
 }
 
-.slider__btn__arrow {
+.blue__btn__arrow {
     background-color: var(--blue);
     color: #FFFFFF;
     font-family: "Circe", sans-serif;
@@ -241,15 +244,218 @@ body {
     margin-right: 12px;
 }
 
+.blue__btn__arrow--reverse {
+    margin-right: 0px;
+    margin-left: 12px;
+}
+
 .catalog-section {
-    padding: 154px 180px;
+    padding: 154px 0 180px;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    /* justify-content: space-between; */
 }
 
 .catalog-section__card {
     width: 440px;
+    border-radius: 20px;
+}
+
+.catalog-section__card--notebook,
+.catalog-section__card--pc,
+.catalog-section__card--server, 
+.catalog-section__card--emc,
+.catalog-section__card--emc-parts {
+    position: relative;
+}
+
+.catalog-section__card--server > span, 
+.catalog-section__card--emc > span,
+.catalog-section__card--emc-parts > span {
+    padding-top: 8px;
+}
+
+.catalog-section__card--odd {
+    background-color: #F2F2F2;
+}
+
+.catalog-section__card--even {
+    background-color: #F9F9F9;
+}
+
+.catalog-section__card--heading {
+    max-width: 388px;
+    padding-bottom: 11px;
+    margin-right: 52px;
+}
+
+.catalog-section__card__heading {
+    line-height: 50px;
+}
+
+.catalog-section__card__description {
+    color: var(--light-gray);
+    font-size: 18px;
+    font-weight: 300;
+    padding: 34px 0 60px;
+}
+
+.serial-number {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.catalog-section__card__info-wrap {
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+.catalog-section__card__info-wrap--notebook {
+    padding-top: 29px;
+}
+
+.catalog-section__card__info-wrap--server,
+.catalog-section__card__info-wrap--emc {
+    padding-top: 44px;
+}
+
+.catalog-section__card__info-wrap--emc-parts {
+    padding-top: 13px;
+}
+
+.catalog-section__card__info-wrap--pc {
+    padding-top: 41px;
+}
+
+.amount-number {
+    color: var(--light-gray, #838383);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 134%;
+    margin-bottom: 7px;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.catalog-section__card--notebook__image {
+    margin-top: -10px;
+    margin-left: 12px;
+}
+
+.catalog-section__card--pc__image {
+    margin-left: 115px;
+    margin-top: -21px;
+}
+
+.catalog-section__card--server__image {
+    margin-top: 90px;
+    margin-left: 51px;
+}
+
+.catalog-section__card--emc__image {
+    margin-top: 67px;
+    margin-left: 75px;
+}
+
+.catalog-section__card--emc-parts__image {
+    margin-top: 46px;
+    margin-left: 87px;
+}
+
+.perks-section {
+    background-color: #F2F2F2;
+    background-image: url(images/perks-bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 165px;
+}
+
+.perks-section__heading-wrap {
+    display: flex;
+    padding-top: 90px;
+    margin-left: 180px;
+}
+
+.perks-section__heading {
+    margin-top: 96px;
+    margin-left: -80px;
+    max-width: 518px;
+}
+
+.perks-section__description {
+    color: var(--light-gray);
+    font-size: 18px;
+    padding: 35px 0 60px;
+}
+
+.perks-section__perks-list {
+    padding: 45px 0 46px;
+    display: flex;
+    gap: 27px;
+}
+
+.perks-section__perks-list__list-element {
+    background-color: var(--dark-gray);
+    width: 330px;
+    padding: 30px 22px 35px 30px;
+    background-image: url(images/perks-list-vector.png);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    border-radius: 20px;
+}
+
+.perks-section__perks-list__list-element__name {
+    color: #FFF;
+    font-size: 22px;
+    font-family: Euclid Circular A;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 19px;
+    padding-bottom: 13px;
+}
+
+.perks-section__perks-list__list-element__description {
+    color: var(--gray-for-perks);
+    font-size: 16px;
+    font-family: Euclid Circular A;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.icon-wrap {
+    border-radius: 10px;
+    background: #343A41;
+    width: fit-content;
+    padding: 17px;
+}
+
+.news-section {
+    padding-top: 172px;
+    margin-bottom: 526px;
+}
+
+.news-section__heading-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-section__heading-wrap > button {
+    margin-top: 10px;
+}
+
+.news-section__description {
+    color: var(--light-gray);
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 721px;
+    padding: 25px 0 69px;
 }
 
 @media screen and (min-width:1920px) {
