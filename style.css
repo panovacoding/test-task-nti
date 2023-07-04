@@ -455,7 +455,50 @@ body {
     font-size: 18px;
     font-weight: 300;
     max-width: 721px;
-    padding: 25px 0 69px;
+    padding: 26px 0 72px;
+}
+
+
+/*////////////////*/
+
+.news-card {
+    background-image: url(images/news-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 414px;
+    position: relative;
+    border-top-left-radius: 50px;
+}
+
+
+.news-card__text {
+    padding-top: 59%;
+    padding-left: 30px;
+    width: 100%;
+    background-image: url(images/rectangle.svg);
+    background-repeat: no-repeat;
+    background-position: 0 110%;
+}
+
+.news-card__btn {
+    width: 94px;
+    height: 55px;
+    position: absolute;
+    right: 12px;
+    bottom: 57px;
+}
+
+.news-card__text__heading {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 130%;
+    max-width: 70%;
+    padding-top: -20px;
+}
+
+.news-card__text__description {
+    font-size: 14px;
+    margin-top: 11px;
 }
 
 @media screen and (min-width:1920px) {
